@@ -21,10 +21,10 @@ http://localhost:8888
 7. Open any of the Jupyter notebooks to view the analyses.
 
 ## Analyses
-1. [Exploratory Data Analysis](src/1-Exploratory-Data-Analysis.ipynb)
+1. [Exploratory Data Analysis](notebooks/1-Exploratory-Data-Analysis.ipynb)
 2. Alpha Diversity
-   1. [Rarefaction and Extrapolation Curves](src/2a-Alpha-Diversity-Rarefaction-and-Extrapolation-Curves.ipynb)
-   2. [Comparing Groups](src/2b-Alpha-Diversity-Comparing-Groups.ipynb)
+   1. [Rarefaction and Extrapolation Curves](notebooks/2a-Alpha-Diversity-Rarefaction-and-Extrapolation-Curves.ipynb)
+   2. [Comparing Groups](notebooks/2b-Alpha-Diversity-Comparing-Groups.ipynb)
    3. Regression Analysis
 3. Beta Diversity
    1. Ordination(NMDS)
