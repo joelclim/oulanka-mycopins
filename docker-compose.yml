@@ -1,0 +1,13 @@
+services:
+  jupyter:
+    build: .
+    ports:
+      - "0.0.0.0:8888:8888"
+    volumes:
+      - .:/home/jovyan/
+    environment:
+      - GRANT_SUDO=yes
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=kean
+    command: start-notebook.sh --NotebookApp.ip='0.0.0.0'
+    restart: unless-stopped
