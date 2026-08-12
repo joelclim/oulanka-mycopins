@@ -1,7 +1,7 @@
 # Oulanka Mycopins
-This project contains the analyses of the saproxylic fungi communities in boreal forests within Oulanka National Park. The analyses are brooken down into several JupyterLab notebooks primarily using `R` to perform the analysis.
+This project contains the analyses of the saproxylic fungi communities in boreal forests within Oulanka National Park. The analyses are brooken down into several Jupyter notebooks primarily using `R` to perform the analysis.
 
-The analyses are in the `notebooks` folder. Supporting `R` scripts are in the `src` folder. The `data` folder contains the source datasets of the analyses.
+The analyses are in the `analyses` folder. They were generated from Jupyter notebooks found in the `notebook` folder. Supporting `R` scripts are in the `src` folder. The `data` folder contains the source datasets of the analyses.
 
 ## Setup
 1. Clone this repository
@@ -19,6 +19,11 @@ $ sudo docker compose start
 http://localhost:8888
 ```
 7. Open any of the Jupyter notebooks to view the analyses.
+
+## Generating analysis html from a Jupyter notebook
+```
+$ quarto render notebooks/(file name).ipynb --output-dir analyses/
+```
 
 ## Analyses
 1. [Exploratory Data Analysis](notebooks/1-Exploratory-Data-Analysis.ipynb)
