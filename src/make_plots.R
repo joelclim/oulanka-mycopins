@@ -29,6 +29,7 @@ make_pie_chart <- function(data, aes_y, aes_transect, text_label) {
     theme_void()
 }
 
+
 display_gt_html <- function(gt_html) {
     gt_html %>%
     as_raw_html(inline_css = TRUE) %>%
