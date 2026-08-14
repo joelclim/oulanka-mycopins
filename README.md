@@ -22,7 +22,8 @@ http://localhost:8888
 
 ## Generating analysis html from a Jupyter notebook
 ```
-$ quarto render notebooks/(file name).ipynb --output-dir analyses/
+$ sudo docker exec -it (docker container name) bash
+jovyan@904aa5366f03:~$ quarto render notebooks/(file name).ipynb --output-dir ../analyses/
 ```
 
 ## Analyses
