@@ -30,6 +30,30 @@ make_pie_chart <- function(data, aes_y, aes_transect, text_label) {
 }
 
 
+make_gginext_labels_and_themes <- function(title, subtitle, caption) {
+    list(
+        labs(
+            title = str_wrap(title_text, width = 125),
+            subtitle = str_wrap(subtitle_text, width = 100),
+            caption = str_wrap(caption_text, width = 125)
+        ),
+        theme(
+            plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
+            plot.subtitle = element_text(hjust = 0.5, size = 14, color = "grey30", margin = margin(b=30)),
+            strip.text = element_text(size = 12),
+            axis.title = element_text(size = 12),
+            axis.text = element_text(size = 12),
+            panel.grid.minor = element_blank(),
+            panel.spacing = unit(1.25, "lines"),
+            legend.title = element_text(size = 10),
+            legend.text = element_text(size = 11),
+            legend.position = "right",
+            plot.caption = element_text(hjust = 0.5, size = 11, margin = margin(t=30)),
+        )
+    )
+}
+
+
 display_gt_html <- function(gt_html) {
     gt_html %>%
     as_raw_html(inline_css = TRUE) %>%
