@@ -1,13 +1,17 @@
 suppressMessages( 
     {
+        library(DHARMa) # 0.5.0
         library(dplyr)
         library(DT)
+        library(emmeans) # 2.0.4
+        library(glmmTMB) # 1.1.14
         library(ggplot2)
         library(gt)
         library(iNEXT)
         library(IRdisplay) 
         library(labdsv)
         library(patchwork)
+        library(performance) # 0.17.1
         library(readr)
         library(scales)
         library(stringr)
