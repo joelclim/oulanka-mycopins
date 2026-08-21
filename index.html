@@ -277,10 +277,17 @@
       font-size: 0.94rem;
     }
 
+    .report-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      align-items: flex-start;
+      margin-top: auto;
+    }
+
     .report-link {
       display: inline-block;
       align-self: flex-start;
-      margin-top: auto;
       padding: 0.62rem 0.9rem;
       border: 1px solid var(--accent);
       border-radius: 7px;
@@ -461,7 +468,7 @@
             <li>Abundance and occurrence patterns</li>
             <li>Taxonomic and sampling summaries</li>
           </ul>
-          <a class="report-link" href="analyses/exploratory-data-analysis.html">
+          <a class="report-link" href="analyses/1-Exploratory-Data-Analysis.html">
             Open EDA report →
           </a>
         </article>
@@ -470,18 +477,23 @@
           <span class="analysis-number">Analysis 02</span>
           <h3>Alpha Diversity</h3>
           <p>
-            Evaluates diversity within fungal assemblages using Hill-number
-            diversity, rarefaction and extrapolation, and sample-coverage-based
-            comparisons.
+            Evaluates diversity within fungal assemblages and at the individual
+            sample level using Hill-number diversity, rarefaction and extrapolation,
+            coverage-based comparisons, and statistical models of species richness.
           </p>
           <ul>
-            <li>Species richness</li>
-            <li>Shannon and inverse Simpson diversity</li>
-            <li>Rarefaction, extrapolation, and coverage</li>
+            <li>Species richness, Shannon diversity, and inverse Simpson diversity</li>
+            <li>Rarefaction, extrapolation, and sample coverage</li>
+            <li>Sample-level richness modeling with ecological and substrate predictors</li>
           </ul>
-          <a class="report-link" href="analyses/alpha-diversity.html">
-            Open Alpha Diversity report →
-          </a>
+          <div class="report-links" aria-label="Alpha Diversity reports">
+            <a class="report-link" href="analyses/2-Alpha-Diversity-Estimation.html">
+              Open Assemblage Analysis report →
+            </a>
+            <a class="report-link" href="analyses/2-Alpha-Diversity-Modeling.html">
+              Open Sample-level Statistical Modeling report →
+            </a>
+          </div>
         </article>
 
         <article class="analysis-card is-disabled" aria-disabled="true">
