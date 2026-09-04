@@ -5,9 +5,14 @@ services:
       - "0.0.0.0:8888:8888"
     volumes:
       - .:/home/jovyan/
+      - ./tmp:/tmp
     environment:
       - GRANT_SUDO=yes
       - JUPYTER_ENABLE_LAB=yes
       - JUPYTER_TOKEN=kean
+       # Explicitly force Linux tools, Python, and R to use the mounted safe temp directory
+      - TMPDIR=/tmp
+      - TMP=/tmp
+      - TEMP=/tmp
     command: start-notebook.sh --NotebookApp.ip='0.0.0.0'
     restart: unless-stopped

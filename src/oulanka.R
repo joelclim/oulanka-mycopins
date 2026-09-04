@@ -12,6 +12,7 @@ suppressMessages(
         library(labdsv)
         library(patchwork)
         library(performance) # 0.17.1
+        library(purrr)
         library(readr)
         library(scales)
         library(stringr)
